@@ -1,0 +1,54 @@
+
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 9.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.5
+blur=true
+
+[window.padding]
+x = 6
+y = 6
+
+#[window.dimensions]
+#columns = 90
+#lines = 25
+
+
+#----------------------------------------------------------------
+
+# Default colors
+[colors.primary]
+background = '#1b2b34'
+foreground = '#d8dee9'
+
+# Normal colors
+[colors.normal]
+black   = '#29414f'
+red     = '#ec5f67'
+green   = '#99c794'
+yellow  = '#fac863'
+blue    = '#6699cc'
+magenta = '#c594c5'
+cyan    = '#5fb3b3'
+white   = '#65737e'
+
+# Bright colors
+[colors.bright]
+black   = '#405860'
+red     = '#ec5f67'
+green   = '#99c794'
+yellow  = '#fac863'
+blue    = '#6699cc'
+magenta = '#c594c5'
+cyan    = '#5fb3b3'
+white   = '#adb5c0'
