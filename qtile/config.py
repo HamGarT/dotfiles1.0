@@ -108,9 +108,7 @@ groups = [
     Group("3", label="󰬼", layout="monadtall"),
     Group("4", label="󰬽", layout="monadtall"),
     Group("5", label="󰬾", layout="monadtall"),
-    Group("6", label="󰣇 "),
-    Group("7", label="󰓓 "),
-    Group("8", label="󱘗 "),
+   
 ]
 
 for i in groups:
@@ -157,8 +155,20 @@ for i in groups:
 # --------------------------------------------------------
 
 layouts = [
-    layout.Columns(border_width=1, margin=5, border_focus="#8f8888", border_normal="#333f40.8"),
-    layout.Max(),
+    layout.Columns(border_width=0, margin=10, border_focus="#1F1D2E", border_normal="#333f40.8"),
+    layout.Max(	
+        border_focus='#1F1D2E',
+	    border_normal='#1F1D2E',
+	    margin=10,
+	    border_width=0,
+    ),
+
+    # layout.Floating(	
+    #     border_focus='#1F1D2E',
+	#     border_normal='#1F1D2E',
+	#     margin=10,
+	#     border_width=1,
+	# ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -337,6 +347,9 @@ bring_front_click = False
 floats_kept_above = True
 cursor_warp = False
 floating_layout = layout.Floating(
+    border_focus='#1F1D2E',
+	border_normal='#1F1D2E',
+	border_width=0,
     float_rules=[
         # Run the utility of `xprop` to see the wm class and name of an X client.
         *layout.Floating.default_float_rules,

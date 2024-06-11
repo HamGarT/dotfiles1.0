@@ -2,7 +2,8 @@
 #keyboard es
 setxkbmap es &
 picom &
-(polybar) &
+(polybar example) &
+(polybar arch) &
 #wallpaper
 feh --bg-scale /home/hamer/Documents/Wallpapers/wallhaven4.png &
 # (polybar power)&
