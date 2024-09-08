@@ -5,7 +5,7 @@ picom &
 (polybar example) &
 (polybar arch) &
 #wallpaper
-feh --bg-scale /home/hamer/Documents/Wallpapers/wallhaven4.png &
+feh --bg-fill /home/hamer/Documents/Wallpapers/frieren.jpg &
 # (polybar power)&
 # (polybar clock)&
 # (polybar spotify)&

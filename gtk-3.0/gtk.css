@@ -1,0 +1,43 @@
+@import 'colors.css';
+
+
+
+
+ .thunar{
+	background-color: transparent;
+	color: bisque;
+	font-size: 15px;
+	font-family:'JetBrainsMono NerdFont';
+	font-family:'CaskaydiaCove Nerd Font';
+}
+
+/*.thunar .horizontal {
+	background-color: transparent;
+}
+
+.thunar .horizontal .standard-view {
+	background-color:rgb(32, 32, 32);;
+}
+
+
+
+
+
+.thunar .sidebar .view{
+	background-color: transparent;
+}
+
+.thunar .sidebar{
+	background: transparent;
+} */
+
+.thunar .vertical{
+	background:rgba(75, 75, 75, 0.1);
+	box-shadow: inset 3px -3px 17px -14px rgba(6, 6, 6, 0.9);
+	color: bisque;
+}
+
+statusbar, toolbar, .standard-view{
+	background-color:rgb(32, 32, 32); 
+}
+
