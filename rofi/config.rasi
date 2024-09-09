@@ -13,8 +13,10 @@ configuration {
   bg: #1E1E2E99;
   bg-alt: #585b7066;
   bg-selected: #31324466;
-
+  background:  rgba(1,2,4, 0.8);
+  foreground:     rgba(202,230,230, 1);
   fg: #cdd6f4;
+  selected:       rgba(20,39,46, 0.7);
   fg-alt: #7f849c;
 
   
@@ -25,19 +27,43 @@ configuration {
 }
 
 window {
-  width: 30%;
+  width: 500px;
   background-color: @bg;
+  x-offset: 0px;
+  y-offset: 0px;
+  enabled: true;
+  border-radius: 12px;
+  background-color: @bg;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: transparent;
+  padding: 20px;
+  border-color: @bg-selected;
+  spacing: 15px;
+}
+
+listview {
+  background-color: transparent;
+  spacing: 7px;
+  columns: 1;
+  lines: 6;
+  
 }
 
 element {
   padding: 8 12;
   background-color: transparent;
   text-color: @fg-alt;
+  border-radius: 12px;
+  padding: 7px 7px 7px 10px;
+  spacing: 10px;
 }
 
 element selected {
   text-color: @fg;
-  background-color: @bg-selected;
+  background-color: rgba(65, 31, 109, 0.637);
 }
 
 element-text {
@@ -52,31 +78,50 @@ element-icon {
   background-color: transparent;
 }
 
-entry {
-  padding: 12;
-  background-color: @bg-alt;
-  text-color: @fg;
-}
+
 
 inputbar {
-  children: [prompt, entry];
-  background-color: @bg;
-}
-
-listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 6;
-}
-
-mainbox {
-  children: [inputbar, listview];
-  background-color: @bg;
+  enabled:                     true;
+  spacing:                     10px;
+  background-color:            transparent;
+  padding: 35px 25px 100px 25px;
+  text-color:                  @foreground;
+  border-radius:               12px;
+  //background-image: url("~/Documents/Wallpapers/wallhaven-village.jpg", width);
+  //background-image: url("~/Documents/Wallpapers/wallhaven-whitedressgirl.jpg", width);
+  //background-image: url("~/Documents/Wallpapers/wallhaven-japancity.jpg", width);
+  background-image: url("~/Documents/Wallpapers/wallhaven-japanesecar.jpg", width);
+  //background-image: url("~/Documents/Wallpapers/wallpaper2.jpg", width);
+  children: [ textbox-prompt-colon, entry ];
 }
 
 prompt {
+  content: "";
   enabled: true;
-  padding: 12 0 0 12;
-  background-color: @bg-alt;
+  border-radius:  10px;
+  padding: 15px;
+  background-color: @background;
+  text-color: inherit;
+  
+}
+
+
+
+#textbox-prompt-colon {
+  content: "";
+  expand: false;
+  border-radius:  10px;
+  padding: 15px 20px;
+  background-color: @bg;
+  text-color: inherit;
+}
+
+entry {
+  enabled: true;
+  padding: 15px;
+  background-color: @bg;
   text-color: @fg;
+  border-radius:               10px;
+  placeholder:                 "Search...";
+  placeholder-color:           inherit;
 }

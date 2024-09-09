@@ -1,5 +1,6 @@
 configuration {
   font: "JetBrainsMono Nerd Font Medium 50";
+  show-icons: false;
 }
 
 
@@ -35,7 +36,7 @@ element selected {
 element-text {
   background-color: transparent;
   text-color: inherit;
-    horizontal-align: 0.46;
+  horizontal-align: 0.46;
 }
 
 
