@@ -92,6 +92,7 @@ inputbar {
   //background-image: url("~/Documents/Wallpapers/wallhaven-japancity.jpg", width);
   background-image: url("~/Documents/Wallpapers/wallhaven-japanesecar.jpg", width);
   //background-image: url("~/Documents/Wallpapers/wallpaper2.jpg", width);
+  //background-image: url("~/Documents/Wallpapers/rofi/honey2-1.jpeg", width);
   children: [ textbox-prompt-colon, entry ];
 }
 

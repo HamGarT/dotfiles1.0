@@ -155,10 +155,10 @@ for i in groups:
 # --------------------------------------------------------
 
 layouts = [
-    layout.Columns(border_width=0, margin=10, border_focus="#1F1D2E", border_normal="#333f40.8"),
+    layout.Columns(border_width=3, margin=7, border_focus="#69799c", border_normal="#21232f.9"),
     layout.Max(	
-        border_focus='#1F1D2E',
-	    border_normal='#1F1D2E',
+        border_focus='#f98189',
+	    border_normal='#f98189',
 	    margin=10,
 	    border_width=0,
     ),
